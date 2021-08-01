@@ -10,7 +10,7 @@ const showPosition = (position)=>{
 
 async function getData(lat,lon) {
     // const dataStream = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat}, ${lon}&key=AIzaSyCCMXl7c-o7zW91-0QEJHfs0Lju8FremHE`)
-    const dataStream = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=3cccf35c27065e000b2710d7dcd7df72&units=metric`)
+    const dataStream = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=3cccf35c27065e000b2710d7dcd7df72&units=metric`)
 
     const data = await dataStream.json();
     // console.log(data.weather[0].main);
